@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+    <link rel="stylesheet" type="text/css" href="tarea7.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header><strong>Tarea #7 - Ericka Solís Porras</strong></header>
+    <div class="calculadora">
+        <h1>Calculadora de Conversión de Temperatura</h1>
+        <input type="num" id="celsius" placeholder="Ingrese temperatura en Celsius">
+        <button onclick="convertirFahrenheit()">Convertir a Fahrenheit</button>
+        <button onclick="convertirKelvin()">Convertir a Kelvin</button>
+        <div id="total" class="resultado"></div>
+    </div>
+
+    <div class="calculadora">
+        <h1>Calculadora de Conversión de Distancia</h1>
+        <input type="num" id="dKm" placeholder="Ingrese distancia en kilómetros">
+        <button onclick="convertirMillas()">Convertir a Millas</button>
+        <button onclick="convertirMetros()">Convertir a Metros</button>
+        <div id="dTotal" class="resultado"></div>
+    </div>
+
+    <div class="calculadora">
+        <h1>Calculadora de Índice de Masa Corporal (IMC)</h1>
+        <input type="num" id="pesoKg" placeholder="Ingrese su peso en kilogramos">
+        <input type="num" id="alturaM" placeholder="Ingrese su altura en metros">
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        <div id="IMC" class="resultado"></div>
+    </div>
+</div>
+</body>
+</html>
